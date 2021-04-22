@@ -1,0 +1,120 @@
+@charset "utf-8";
+
+#header{
+    position:relative;
+    height: 80px;
+    line-height: 80px;
+    z-index:1;
+    text-align: center;
+    width:1200px;
+    margin:0 auto;
+}
+#header.fixed{
+    position:fixed;
+    top:0;
+    left:50%;
+    margin-left:-600px;
+    width:1200px;
+    z-index:100;
+}
+#header h1{
+    float:left;
+    margin-right:20px;
+}
+#header h1 a{}
+#header h1 img{}
+
+.gnb{
+    display:inline-block;
+    text-align:center;
+}
+.gnb li{
+    display:inline-block;
+    margin:0 50px;
+}
+.gnb li a{}
+.gnb li img{}
+
+.hIcon{
+    
+    float:right;
+}
+.hIcon li{
+    float:left;
+    margin-left:30px;
+    
+}
+.hIcon li a{
+    display:block;
+    height: 100%;
+}
+.hIcon li img{}
+
+
+/*footer*/
+#footer{
+    background:#1e1e1e;
+    color:#fff;
+}
+#footer h4{
+    font-size: 16px;
+    font-weight:400;
+}
+#footer p{
+    font-weight: 300;
+    font-size:14px;
+}
+.fImg{
+    height:181px;
+}
+.fImg img{display:block;}
+.fTopbg{
+    height:40px;
+    line-height:40px;
+    background:#363636;    
+}
+.fTop a{
+    color:#fff;
+}
+.fTop{
+    text-align: center;
+    font-size:14px;
+    font-weight:300;
+    overflow: hidden;
+}
+.fTop li{
+    display:inline-block;
+    margin-right:100px;
+}
+
+.fLogo{
+    margin-left:160px;
+    display:inline-block;
+}
+.fLogo img{
+    display:block;
+    margin-bottom:100px;
+}
+.fLogo h4{
+    margin-bottom: 10px;
+}
+.fLogo p{}
+.fBottom{
+    padding:50px 0;
+    box-sizing: border-box;
+    height:350px;
+}
+.fFamily{float:right;}
+.fInfo{
+    float:left;
+    width:40%;
+    margin-bottom:20px;
+}
+.fInfo li{}
+.fInfo li img{
+}
+.sns{}
+.sns li{
+    margin-right: 10px;
+    float:left;
+}

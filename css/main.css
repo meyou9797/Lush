@@ -1,0 +1,364 @@
+@charset "utf-8";
+
+/*메인슬라이더*/
+.mainSlider{
+    position:relative;
+    overflow: hidden;
+}
+.mainSlider .slick-slide{
+    height:864px;
+    position:relative;
+    overflow: hidden;
+}
+.mainSlider img{
+    position:absolute;
+    left: 50%;
+    margin-left:-960px;
+}
+
+.mainSlider .slick-dots{
+    position: absolute;
+    top:50%;
+    margin-top:-46px;
+    left:50px;
+}
+.mainSlider .slick-dots li{
+    display:block;
+}
+.mainSlider .slick-dots button{
+    background:url(../images/sliderNB2.png)no-repeat;
+    width:11px;
+    height: 11px;
+    clear: both;
+}
+.mainSlider .slick-active button{
+    background:url(../images/sliderNb.png)no-repeat;
+    width:20px;
+    height: 21px;
+}
+/*슬릭버튼,nb*/
+.sliderPrevBtn,.sliderNextBtn{
+    text-indent:-9999px;
+    z-index: 1;
+    background:url(../images/mainSliderArrowL.png)no-repeat;
+    height:30px;
+    width:30px;
+    position:absolute;
+    bottom:60px;
+    left: 350px;
+}
+.sliderNextBtn{
+    background-image:url(../images/mainSliderArrowR.png);
+    left:400px;
+}
+/*maincon01*/
+.mainCon01{
+    margin-top:50px;
+    margin-bottom:100px;
+    position:relative;
+}
+.con01imgbg{
+    position:relative;
+}
+.con01Img{
+    position:absolute;
+    top:0;
+    left:10%;
+}
+.tabs{
+    position: absolute;
+    right:0;
+    z-index: 1;
+}
+.tabs li{
+    float:left;
+    margin-right:20px;
+}
+.tabs a::after{
+    content:"";
+    display:block;
+    border-bottom:1px solid #c8c8c8;
+    transform: scaleX(0);
+    transition: transform 250ms ease-in-out; 
+}
+.tabs a:hover::after{
+    transform: scale(1);
+}
+.con01Txt{
+    position:absolute;
+    right:0;
+    top:50%;
+    margin-top:-50px;
+    text-align: right;
+}
+.con01Txt h3{
+    font-family:"Notosans",sans-serif;
+    font-weight: 700;
+    font-size:33px;
+    margin-bottom:10px;
+}
+.con01Txt p{
+    margin-bottom:30px;
+}
+.pdtName{
+    position:relative;
+}
+.pdtName h4{
+    font-family:"Notosans",sans-serif;
+    font-weight:400;
+    font-size:15px;
+}
+
+/*mainCon02*/
+.mainCon02{
+    background:url(../images/mainCon03Bg.jpg)no-repeat center center;
+    background-attachment:fixed;/*ficed사용시 사이즈 줘야함 그래서 백그라운드 사이즈 커버와 같이 사용*/
+    background-size:cover;
+    color:#fff;
+    text-align: center;
+    padding:100px 0 50px 0;/*위 오른쪽,왼쪽 아래*/
+}
+
+.mainCon02 h2{
+    font-family:"Notosans",sans-serif;
+    font-weight:700;
+    padding-bottom:15px;/*선기준안쪽여백*/
+}
+.mainCon02 p{
+    font-size:12px;
+    margin-top:15px;
+    line-height:22px;
+    font-weight:200;
+}
+.mainCon02 .con02SubTit{
+    font-size:14px;
+    font-weight:400;
+}
+
+.mainCon02 .plusBtn{
+    background-image:url(../images/main/btn_more.png);
+    margin:0 auto;
+    margin-top:50px;
+}
+.plusBtn{
+    width:130px;
+    height: 50px;
+    line-height:50px;
+    border:1px solid #fff;
+}
+.plusBtn a{
+    display:block;
+    height: 100%;
+    color:#fff;
+    font-weight: 300;
+}
+.plusBtn:hover{
+    background:#fff;
+    transition:background 1s;
+}
+.plusBtn:hover a{
+    color:#333;
+}
+/*mainCon03*/
+.mainCon03{
+    text-align: center;
+    height: 750px;
+}
+/*maincon03 slick button*/
+.slick-slider button{
+    border-style: none;
+    outline:none
+}
+.slick-dots{
+    text-align: center;
+    width:100%;
+    overflow: hidden;
+}
+.slick-dots li{
+    display:inline-block;
+}
+.slick-dots button{
+    margin-top:20px;
+    width:300px;
+    height:1px;
+    text-indent: -9999px;
+    float:left;
+    cursor:pointer;
+}
+.slick-active button{
+    background:#333;
+}
+.con03Tit{}
+.con03Tit h3{
+    font-size:30px;
+    margin:50px 0;
+}
+.con03Img{
+    position: relative;
+}
+
+.con03Img li{
+    float:left;
+    display:inline-block;
+}
+
+.con03Img li:last-child{
+    margin-right:0;
+}
+.con03Img li img{
+    display:inline-block;
+}
+.con03Img li a{
+    height:100%;
+    display:block;
+}
+/*슬릭버튼*/
+.con03prevBtn{
+    z-index: 1;
+    background:url(../images/con03ArrowL.png)no-repeat;
+    width:20px;
+    height:38px;
+    position:absolute;
+    top:50%;
+    margin-top:-97px;
+    left:33%;
+    text-indent: -9999px;
+}
+.con03nextBtn{
+    background:url(../images/con03ArrowR.png)no-repeat;
+    width:20px;
+    height:38px;
+    position:absolute;
+    top:50%;
+    margin-top:-97px;
+    right:33%;
+    text-indent: -9999px;
+}
+
+
+.con03STit{
+    margin:20px 0;
+    font-size:15px;
+    line-height:30px;
+    opacity: 0;
+    transition:opacity 1s;
+}
+.mainCon03 .slick-current .con03STit{
+    opacity: 1;
+}
+.con03STit h3{
+    font-size:25px;
+    font-weight:600;
+}
+.con03STit p{
+    font-size:16px;
+}
+.con03STit p,.con03STit span,.con03STit h3{
+    
+}
+.con03STit span::after{
+    content:"";
+    display:block;
+    margin-top:40px;
+}
+.con03Slick .slick-center{
+}
+.con03Slick .slick-center img{
+    transform:scale(1.2);
+}
+/*maincon04*/
+.mainCon04{
+    margin-bottom:50px;
+}
+
+.con04Img{
+    float:left;
+}
+.con04Img a{}
+.con04Img img{
+    display:block;
+}
+
+/*mainCon05*/
+.mainCon05{
+    height: 705px;
+    background:url(../images/mainCon05Bg.jpg)no-repeat center center;
+    background-size:cover;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+    
+}
+.con05Grid{
+     position:relative;
+    text-align: center;
+}
+
+.con05Tit{
+    margin-top:20px;
+}
+.con05Tit h2{
+    padding:30px 0;
+}
+.con05Box .slick-slide img{
+    margin:0 auto;
+}
+
+.centerBox{
+    margin:0 auto;
+    padding:30px;
+    box-sizing: border-box;
+    width:474px;
+    height:388px;
+    background:#fff;
+    opacity: 0.4;
+    position:relative;
+}
+.centerBox img{
+    width:70%;
+}
+.rightBox,.leftBox{
+    width:474px;
+    height: 388px;
+}
+.leftBox{}
+.con05Txt{}
+.con05Txt h3{
+    font-size:20px;
+    margin-top:25px;
+    margin-bottom:5px;
+}
+.con05Txt p{font-size:14px;}
+
+.con05Box .slick-center{
+    opacity:1;
+    box-shadow:0px 0px 20px 5px rgba(0,0,0, 0.1);
+    transform:scale(1.09);
+}
+.con05Box .slick-center h3,.con05Box .slick-center p{
+    transform:scale(1);
+}
+.prevBtn{
+    background:url(../images/con05ArrowL.png)no-repeat;
+    width:31px;
+    height: 56px;
+    position:absolute;
+    top:50%;
+    margin-top:-15px;
+    left:-5%;
+    text-indent:-9999px;
+}
+.nextBtn{
+     background:url(../images/con05ArrowR.png)no-repeat;
+    width:31px;
+    height: 56px;
+    position:absolute;
+    top:50%;
+    margin-top:-15px;
+    right:-5%;
+    text-indent:-9999px;
+
+}
+.slick-slide {
+    outline: none
+}
